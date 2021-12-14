@@ -14,12 +14,14 @@
 
 </head>
 <body> 
+
 <div id="resultContent">
     <h1>Selecione o horário</h1>
     <p id="valueList"></p>
     <h1 id="horaAcrescida"></h1>
     <h1 id="realTime"></h1>
 </div> 
+
     <div class="flex-container">
         
         <div class="flex-check">
@@ -36,17 +38,22 @@
             <div class="checkboxes flex"><label for="21:00:00">21:00h&nbsp</label> <input id="21:00:00" name="21:00:00" type="checkbox" class="checkbox" value="20:60:00"></input></div>
             <div class="checkboxes flex"><label for="23:00:00">23:00h&nbsp</label> <input id="23:00:00" name="23:00:00" type="checkbox" class="checkbox" value="22:60:00"></input></div>
         </div>
-            <div class="select">
-                <select name="minutesBefore" id="minutesBefore" onchange()>
+        <div class="select">
+            <select name="minutesBefore" id="minutesBefore" onchange()>
                     <option selected disabled>Quantos minutos antes:</option>
                         <option value="000000">0Min</option>
                         <option value="000500">5Min</option>
                         <option value="001000">10Min</option>
                         <option value="001500">15Min</option>
                 </select>
-            </div>
-            <button class="btn" id="stop">Parar alarme</button>
+        </div>
+      
+    
+        <button class="btn" id="stop">Parar alarme</button>
     </div>
+
+
+
 
     <audio id="audio" src="assets/mc-poze-do-rodo.mp3"></audio>
     
