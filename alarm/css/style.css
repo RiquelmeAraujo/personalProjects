@@ -281,7 +281,7 @@ select::-ms-expand{
     label{
         padding-top: 10%;
         font-size: 2em;
-        color: black;
+        color: white;
     }
 
     input[type="checkbox"]{
@@ -308,5 +308,8 @@ select::-ms-expand{
         color: white;
         display: none;
     
+    }
+    .select:hover::after{
+        color: white;
     }
 }
