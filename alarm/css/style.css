@@ -213,12 +213,13 @@ select::-ms-expand{
 @media (min-width: 320px) and (max-width: 800px) {
     body{
 
-        background-color:  #121214;
-        color: rgb(201, 192, 192);
+        background-color:  #dfdce3;
+        color: black;
         
         font-size: 0.5em;
         text-align: center;
-    
+        font-weight: bold;
+
         height: 100vh;
         width: 100vw;
 
@@ -280,6 +281,7 @@ select::-ms-expand{
     label{
         padding-top: 10%;
         font-size: 2em;
+        color: black;
     }
 
     input[type="checkbox"]{
@@ -287,7 +289,7 @@ select::-ms-expand{
         -webkit-appearance: none;
         height: 20px;
         width: 25px;
-        background-color: #f7f0f0;
+        background-color: white;
         border-radius: 5px;
         cursor: pointer;
         display: flex;
@@ -296,5 +298,15 @@ select::-ms-expand{
         outline: none;
     
         transition: 0.4s;
+    }
+
+    input[type="checkbox"]:after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f00c";
+        font-size: 20px;
+        color: white;
+        display: none;
+    
     }
 }
