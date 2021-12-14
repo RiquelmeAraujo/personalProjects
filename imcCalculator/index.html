@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculo.js"></script>
+    <title>Calculadora de imc</title>
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tabela IMC</a>
+        <a href="#">sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main class="container">
+        <article>
+            <div class="form">
+                    
+                <label>Altura:</label>
+                <input type="text" name="heightP" id="height">
+                    
+                <label>Peso:</label>
+                <input type="text" name="weightP" id="weight">
+                    
+                <input type="button" id="calc" value="Calcular" onclick="calcular()">
+            </div>
+
+        <table id="ImcTable">
+            <tr>
+                <th>
+                    IMC
+                </th>
+                <th>
+                    classificação
+                </th>
+                <th>
+                    obesidade (grau)
+                </th>
+            </tr>
+            <tr>
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+            </tr>
+            <tr id="2">
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+            </tr>
+            <tr>
+                <td>Maior que 40</td>
+                <td>Obesidade Grave</td>
+                <td>III</td>
+            </tr>
+        </table>
+        <div id="resImc"></div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>site criado por <a href="https://github.com/RiquelmeAraujo" target="_blank">Riquelme Araujo</a> para treino.</p>
+    </footer>
+
+</body>
+</html>
