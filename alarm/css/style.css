@@ -210,7 +210,7 @@ select::-ms-expand{
     transform: translateY(2px);
   }
 
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     body{
 
         background-color:  #dfdce3;
